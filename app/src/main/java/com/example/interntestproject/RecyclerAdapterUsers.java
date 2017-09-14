@@ -7,10 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.List;
 
-import static com.example.interntestproject.MainActivity.LOG_TAG;
 
 /**
  * Created by Андрей on 13.09.2017.
@@ -58,7 +56,6 @@ public class RecyclerAdapterUsers extends RecyclerView.Adapter<RecyclerAdapterUs
         private TextView mName;
         private TextView mLastName;
         private TextView mDate;
-        private String mItem;
         public UserViewHolder(View itemView) {
             super(itemView);
             mName = (TextView) itemView.findViewById(R.id.first_name);

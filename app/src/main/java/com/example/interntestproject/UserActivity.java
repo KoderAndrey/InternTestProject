@@ -4,12 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
-import static com.example.interntestproject.MainActivity.LOG_TAG;
 
 public class UserActivity extends AppCompatActivity {
     private EditText mFName;
@@ -40,7 +38,6 @@ public class UserActivity extends AppCompatActivity {
         mDate = (EditText) findViewById(R.id.birth_date_ed);
         if (mMode.equals("update")) {
             mId = mIntent.getLongExtra("position", 0);
-            Log.d(LOG_TAG, "position " + mId);
             mObjToUpdate = mUserOp.getUser(mId);
             mFName.setText(mObjToUpdate.getFirstName());
             mLName.setText(mObjToUpdate.getLastName());
