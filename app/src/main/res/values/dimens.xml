@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="text_margin">11dp</dimen>
+    <dimen name="text_margin_between">4dp</dimen>
+    <dimen name="height_container">140dp</dimen>
+    <dimen name="margin_left_text">15dp</dimen>
+    <dimen name="margin_top_text">26dp</dimen>
+    <dimen name="lenth_edit_text">150dp</dimen>
+</resources>
